@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每日工作记录 · Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23fb923c'/><stop offset='1' stop-color='%23ea580c'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><path d='M54 18 L28 56 L46 56 L42 82 L72 44 L54 44 Z' fill='%237c2d12'/></svg>" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=22" />
+</head>
+<body>
+  <div id="app">
+    <!-- 移动端顶栏 -->
+    <header class="mobile-topbar">
+      <button id="menuBtn" class="icon-btn" aria-label="菜单">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <span class="mobile-title">每日工作记录</span>
+    </header>
+
+    <!-- 侧边导航 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">记</div>
+        <div class="brand-text">
+          <div class="brand-name">每日工作记录</div>
+          <div class="brand-sub">海外社媒运营工作台</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <div class="storage-dot" id="storageDot" title="数据保存在本机浏览器"></div>
+        <span>数据保存在本机浏览器</span>
+      </div>
+    </aside>
+    <div class="sidebar-mask" id="sidebarMask"></div>
+
+    <!-- 主内容 -->
+    <main class="main" id="main">
+      <div id="view" class="view"></div>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot"></div>
+  <div id="menuRoot"></div>
+
+  <!-- 工具与数据层（顺序加载，零构建，可直接 file:// 运行） -->
+  <script src="assets/js/util.js?v=21"></script>
+  <script src="assets/js/db.js?v=22"></script>
+  <script src="assets/js/nlp.js?v=21"></script>
+  <script src="assets/js/report.js?v=21"></script>
+  <script src="assets/js/importer.js?v=21"></script>
+  <script src="assets/js/components.js?v=21"></script>
+  <script src="assets/js/task-form.js?v=21"></script>
+  <script src="assets/js/quota.js?v=22"></script>
+  <script src="assets/js/quota-panel.js?v=22"></script>
+  <script src="assets/js/person-view.js?v=21"></script>
+  <script src="assets/js/views/today.js?v=22"></script>
+  <script src="assets/js/views/followups.js?v=21"></script>
+  <script src="assets/js/views/history.js?v=21"></script>
+  <script src="assets/js/views/people.js?v=21"></script>
+  <script src="assets/js/views/settings.js?v=21"></script>
+  <script src="assets/js/views/soon.js?v=21"></script>
+  <script src="assets/js/app.js?v=22"></script>
+</body>
+</html>
